@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>redes</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Conceitos</a></li>
+            <li><a href="./aplicacoes.html">Aplicações</a></li>
+            <li><a href="./videos.html">Vídeos</a></li>
+            <li><a href="./simu.html">Simulações</a></li>
+            <li><a href="./clp.html">PLC</a></li>
+            <li><a href="./rede.html">Redes</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Redes Locais e Industriais</h1>
+    </header>
+
+    <main>
+       
+
+        <section>
+            <h2>Ethernet</h2><br>
+            <img src="./img/etyhernet.jpg" alt="">
+            <p>A rede de cabos dos computadores de escritório. É a base de quase todas as outras redes desta página.</p>
+            <p><strong>Cabo:</strong> Cabo de par trançado (fios enrolados dois a dois, que reduzem ruído). Os tipos mais comuns são Cat5e, Cat6 e Cat6a.</p>
+            <p><strong>Conector:</strong> RJ45 (o plugue de internet). Na fábrica, usa-se o M12, que é redondo e rosqueado.</p>
+            <p><strong>Formato da rede:</strong> Estrela: todos os aparelhos ligam num switch central.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Pode levar energia pelo mesmo cabo (PoE), por exemplo para câmeras e telefones.</p>
+            <p><strong>Como evitam confusão:</strong> Antigamente, quem falasse ao mesmo tempo causava colisão. Hoje o switch organiza e evita isso.</p>
+            <p><strong>Velocidade:</strong> De 10 Mbps até 10 Gbps ou mais.</p>
+            <p><strong>Distância máxima:</strong> 100 metros por cabo.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Não. O tempo de resposta pode variar.</p>
+            <p><strong>Onde é usada:</strong> Escritórios, computadores, servidores e base para a rede da fábrica.</p>
+        </section>
+
+        <section>
+            <h2>Wi-Fi</h2><br>
+            <img src="./img/pontacess-removebg-preview.png" alt="">
+            <p>A rede sem fio, que usa ondas de rádio no lugar de cabos.</p>
+            <p><strong>Cabo:</strong> Não tem cabo. Usa ondas de rádio em 2,4, 5 ou 6 GHz.</p>
+            <p><strong>Conector:</strong> Só as antenas. O roteador (ponto de acesso) liga ao resto da rede por cabo RJ45.</p>
+            <p><strong>Formato da rede:</strong> Estrela: os aparelhos falam com um ponto de acesso. Também existe a versão em malha, com vários pontos.</p>
+            <p><strong>Energia no mesmo cabo:</strong> O roteador pode ser alimentado pelo cabo de rede. Os aparelhos usam bateria ou tomada.</p>
+            <p><strong>Como evitam confusão:</strong> Cada aparelho ouve se o canal está livre antes de falar (CSMA/CA).</p>
+            <p><strong>Velocidade:</strong> De 11 Mbps nos modelos antigos até mais de 9 Gbps nos novos.</p>
+            <p><strong>Distância máxima:</strong> Cerca de 30 a 50 m dentro de prédios e 100 m ao ar livre.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Não. Paredes e outros sinais atrapalham.</p>
+            <p><strong>Onde é usada:</strong> Notebooks, celulares, tablets e robôs que se movem pela fábrica.</p>
+        </section>
+
+        <section>
+            <h2>Fibra óptica</h2><br>
+            <img src="./img/optica.jpg" alt="">
+            <p>Um fio de vidro fino que leva dados com pulsos de luz.</p>
+            <p><strong>Cabo:</strong> Fibra de vidro. A multimodo tem núcleo mais grosso e serve para curtas distâncias. A monomodo tem núcleo bem fino e vai muito longe.</p>
+            <p><strong>Conector:</strong> LC, SC, ST e FC, que são plugues pequenos e encaixáveis.</p>
+            <p><strong>Formato da rede:</strong> Ponto a ponto, estrela ou anel.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não leva energia. Cada ponta precisa de tomada própria.</p>
+            <p><strong>Como evitam confusão:</strong> Usa o protocolo da rede que carrega, quase sempre Ethernet, sem colisões.</p>
+            <p><strong>Velocidade:</strong> De 100 Mbps a 400 Gbps ou mais.</p>
+            <p><strong>Distância máxima:</strong> Multimodo: de 300 m a 2 km. Monomodo: de 10 km a mais de 80 km.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Depende do protocolo, mas a luz quase não atrasa.</p>
+            <p><strong>Onde é usada:</strong> Liga prédios, painéis e salas de controle. Não sofre com ruído elétrico e é segura em locais com risco de explosão.</p>
+        </section>
+
+        <section>
+            <h2>Profinet</h2><br>
+            <img src="./img/profnet.jpg" alt="">
+            <p>Ethernet própria para fábricas, criada pela Siemens e pela entidade PI.</p>
+            <p><strong>Cabo:</strong> Cabo Ethernet verde, blindado (com capa que bloqueia ruído).</p>
+            <p><strong>Conector:</strong> RJ45 e M12 de 4 pinos.</p>
+            <p><strong>Formato da rede:</strong> Estrela, linha, árvore ou anel.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não. Os módulos precisam de 24 V à parte.</p>
+            <p><strong>Como evitam confusão:</strong> O controlador (CLP) fala com os módulos de forma cíclica. Pacotes importantes ganham prioridade.</p>
+            <p><strong>Velocidade:</strong> 100 Mbps.</p>
+            <p><strong>Distância máxima:</strong> 100 m por trecho de cabo.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim. Respostas entre 1 e 10 ms, e até menos de 0,1 ms na versão IRT.</p>
+            <p><strong>Onde é usada:</strong> Liga CLPs, módulos de entrada e saída e inversores.</p>
+        </section>
+
+        <section>
+            <h2>EtherNet/IP</h2><br>
+            <img src="./img/etyhernet.jpg" alt="">
+            <p>Ethernet de fábrica criada pela ODVA e muito usada com equipamentos Rockwell/Allen-Bradley. Não tem relação com o IP de endereço.</p>
+            <p><strong>Cabo:</strong> Cabo Ethernet comum, de preferência blindado.</p>
+            <p><strong>Conector:</strong> RJ45 e M12.</p>
+            <p><strong>Formato da rede:</strong> Estrela, linha ou anel.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não. Precisa de 24 V à parte.</p>
+            <p><strong>Como evitam confusão:</strong> Os aparelhos publicam seus dados e quem precisa recebe. Tudo passa pela Ethernet.</p>
+            <p><strong>Velocidade:</strong> 10, 100 ou 1000 Mbps.</p>
+            <p><strong>Distância máxima:</strong> 100 m por trecho de cabo.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Quase. Boa para a maioria das máquinas, com respostas de 1 a 10 ms.</p>
+            <p><strong>Onde é usada:</strong> Controle de máquinas e linhas de produção.</p>
+        </section>
+
+        <section>
+            <h2>Modbus RTU</h2><br>
+            <img src="./img/modbus.jpg" alt="">
+            <p>Um dos protocolos mais antigos e simples. Um mestre pergunta e o escravo responde.</p>
+            <p><strong>Cabo:</strong> Dois fios trançados e blindados no padrão RS-485.</p>
+            <p><strong>Conector:</strong> Bornes de parafuso ou D-Sub de 9 pinos.</p>
+            <p><strong>Formato da rede:</strong> Barramento: um cabo único passa por todos os aparelhos, com resistor de 120 Ω nas pontas.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não.</p>
+            <p><strong>Como evitam confusão:</strong> Mestre-escravo: só fala quem foi perguntado. Um mestre atende até 247 escravos.</p>
+            <p><strong>Velocidade:</strong> De 1,2 a 115,2 kbps. O mais usado é 9,6 kbps.</p>
+            <p><strong>Distância máxima:</strong> Até 1200 m.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim, mas o tempo cresce conforme o número de aparelhos.</p>
+            <p><strong>Onde é usada:</strong> Medidores de energia, inversores de frequência e controladores de temperatura.</p>
+        </section>
+
+        <section>
+            <h2>Profibus DP</h2><br>
+            <img src="./img/profibus.jpg" alt="">
+            <p>Rede rápida por fios para ligar CLP a módulos e inversores.</p>
+            <p><strong>Cabo:</strong> Par trançado blindado, de cor roxa, no padrão RS-485.</p>
+            <p><strong>Conector:</strong> D-Sub de 9 pinos com chave de terminação. Também existe o M12.</p>
+            <p><strong>Formato da rede:</strong> Barramento: um cabo passa por todos. Terminadores nas duas pontas.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não.</p>
+            <p><strong>Como evitam confusão:</strong> Passa um bastão (token) entre os mestres, e cada mestre pergunta aos escravos.</p>
+            <p><strong>Velocidade:</strong> De 9,6 kbps a 12 Mbps.</p>
+            <p><strong>Distância máxima:</strong> De 1200 m (lento) a 100 m (rápido), até 32 aparelhos por trecho.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim. Respostas entre 1 e 10 ms.</p>
+            <p><strong>Onde é usada:</strong> Fábricas e linhas de montagem.</p>
+        </section>
+
+        <section>
+            <h2>Profibus PA</h2><br>
+            <img src="./img/PA-removebg-preview.png" alt="">
+            <p>Versão do Profibus feita para indústrias de processo, como química e petróleo, onde pode haver gás inflamável.</p>
+            <p><strong>Cabo:</strong> Par trançado blindado, de cor azul.</p>
+            <p><strong>Conector:</strong> Bornes e M12, ligados por um acoplador ao Profibus DP.</p>
+            <p><strong>Formato da rede:</strong> Linha, árvore ou estrela.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Sim. Dados e energia vão no mesmo par de fios.</p>
+            <p><strong>Como evitam confusão:</strong> Mestre-escravo, ligado ao DP.</p>
+            <p><strong>Velocidade:</strong> 31,25 kbps.</p>
+            <p><strong>Distância máxima:</strong> Até 1900 m, ou cerca de 1000 m em áreas com risco de explosão.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim, mas é lenta, na casa de centenas de ms.</p>
+            <p><strong>Onde é usada:</strong> Sensores de pressão, vazão e temperatura em refinarias e indústrias químicas. A segurança intrínseca evita faíscas.</p>
+        </section>
+
+        <section>
+            <h2>HART e WirelessHART</h2><br>
+            <p>O HART manda dados digitais pelo mesmo fio do sinal 4-20 mA dos sensores. O WirelessHART faz o mesmo sem fios.</p>
+            <p><strong>Cabo:</strong> HART: o próprio par do laço 4-20 mA. WirelessHART: ondas de rádio.</p>
+            <p><strong>Conector:</strong> Bornes do instrumento. O WirelessHART tem antena.</p>
+            <p><strong>Formato da rede:</strong> HART: ponto a ponto ou até 15 aparelhos. WirelessHART: malha, com os aparelhos repassando sinal uns aos outros.</p>
+            <p><strong>Energia no mesmo cabo:</strong> HART: o próprio laço alimenta. WirelessHART: bateria.</p>
+            <p><strong>Como evitam confusão:</strong> HART: mestre pergunta e instrumento responde. WirelessHART: cada aparelho tem horário marcado para falar.</p>
+            <p><strong>Velocidade:</strong> HART: 1200 bps. WirelessHART: 250 kbps.</p>
+            <p><strong>Distância máxima:</strong> HART: cerca de 1500 m. WirelessHART: cerca de 100 m entre aparelhos.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Não. A resposta leva cerca de meio segundo ou mais.</p>
+            <p><strong>Onde é usada:</strong> Configurar, calibrar e diagnosticar instrumentos de processo.</p>
+        </section>
+
+        <section>
+            <h2>Foundation Fieldbus H1</h2><br>
+            <p>Rede de campo para processo em que os próprios instrumentos fazem parte do controle.</p>
+            <p><strong>Cabo:</strong> Par trançado blindado.</p>
+            <p><strong>Conector:</strong> Bornes, M12 e caixas de junção.</p>
+            <p><strong>Formato da rede:</strong> Um tronco principal com derivações curtas.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Sim. Dados e energia vão no mesmo par.</p>
+            <p><strong>Como evitam confusão:</strong> Um coordenador (LAS) marca a hora de cada um falar, como um professor chamando a chamada.</p>
+            <p><strong>Velocidade:</strong> 31,25 kbps.</p>
+            <p><strong>Distância máxima:</strong> Até 1900 m, e até 9,5 km com repetidores. Até 32 aparelhos.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim. Tudo é agendado.</p>
+            <p><strong>Onde é usada:</strong> Indústrias químicas, petroquímicas e de papel.</p>
+        </section>
+
+        <section>
+            <h2>Foundation Fieldbus HSE</h2><br>
+            <p>A versão Ethernet rápida do Fieldbus. Liga várias redes H1 ao sistema de controle.</p>
+            <p><strong>Cabo:</strong> Cabo Ethernet ou fibra.</p>
+            <p><strong>Conector:</strong> RJ45 ou conectores de fibra.</p>
+            <p><strong>Formato da rede:</strong> Estrela ou anel.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não.</p>
+            <p><strong>Como evitam confusão:</strong> Ethernet comum, com um aparelho (linking device) que liga o H1 ao HSE.</p>
+            <p><strong>Velocidade:</strong> 100 Mbps.</p>
+            <p><strong>Distância máxima:</strong> 100 m em cobre e cerca de 2 km em fibra.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Não de forma estrita.</p>
+            <p><strong>Onde é usada:</strong> Espinha dorsal que reúne as redes H1.</p>
+        </section>
+
+        <section>
+            <h2>AS-i</h2><br>
+            <p>Rede de dois fios que liga sensores e botões simples, para substituir um monte de cabos.</p>
+            <p><strong>Cabo:</strong> Cabo amarelo achatado de 2 fios, sem blindagem.</p>
+            <p><strong>Conector:</strong> Conexão por perfuração: o conector fura a capa e encosta nos fios.</p>
+            <p><strong>Formato da rede:</strong> Qualquer formato: linha, estrela, árvore ou anel.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Sim. O cabo amarelo leva 24 V e dados juntos.</p>
+            <p><strong>Como evitam confusão:</strong> Mestre-escravo: um mestre pergunta a cada escravo em sequência.</p>
+            <p><strong>Velocidade:</strong> 167 kbps.</p>
+            <p><strong>Distância máxima:</strong> 100 m, e até 300 m com repetidores. Até 62 escravos.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim. Ciclo de 5 a 10 ms.</p>
+            <p><strong>Onde é usada:</strong> Sensores, botões e válvulas no nível mais baixo da máquina.</p>
+        </section>
+
+        <section>
+            <h2>IO-Link</h2><br>
+            <p>Liga um sensor ou atuador inteligente por um cabo simples, comum e curto.</p>
+            <p><strong>Cabo:</strong> Cabo comum de 3 a 5 fios, sem blindagem.</p>
+            <p><strong>Conector:</strong> M12 de 4 ou 5 pinos, ou M8.</p>
+            <p><strong>Formato da rede:</strong> Ponto a ponto. Cada sensor tem sua porta no mestre.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Sim. O cabo leva 24 V para o sensor.</p>
+            <p><strong>Como evitam confusão:</strong> Mestre-escravo: o mestre sempre começa a conversa.</p>
+            <p><strong>Velocidade:</strong> Até 230,4 kbps.</p>
+            <p><strong>Distância máxima:</strong> 20 m por sensor.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim. Ciclos a partir de 0,4 ms.</p>
+            <p><strong>Onde é usada:</strong> Sensores inteligentes que enviam também diagnósticos e permitem ajustes pelo CLP.</p>
+        </section>
+
+        <section>
+            <h2>DeviceNet</h2><br>
+            <p>Rede de fábrica feita em cima do CAN, o barramento dos carros.</p>
+            <p><strong>Cabo:</strong> Cabo de 5 fios: 2 de dados, 2 de energia e a malha.</p>
+            <p><strong>Conector:</strong> Bornes e conectores mini ou micro de 5 pinos.</p>
+            <p><strong>Formato da rede:</strong> Tronco com derivações.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Sim. O cabo leva 24 V.</p>
+            <p><strong>Como evitam confusão:</strong> Se dois falam juntos, vence quem tem prioridade maior (arbitragem), sem perder a mensagem.</p>
+            <p><strong>Velocidade:</strong> 125, 250 ou 500 kbps.</p>
+            <p><strong>Distância máxima:</strong> Até 500 m (lento) e 100 m (rápido). Até 64 nós.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim, por prioridade.</p>
+            <p><strong>Onde é usada:</strong> Sensores, botoeiras e inversores em máquinas.</p>
+        </section>
+
+        <section>
+            <h2>EtherCAT</h2><br>
+            <p>Ethernet de altíssima velocidade. Um único pacote passa por todos os aparelhos, que leem e escrevem nele em tempo real.</p>
+            <p><strong>Cabo:</strong> Cabo Ethernet Cat5e ou fibra.</p>
+            <p><strong>Conector:</strong> RJ45, M8 e M12.</p>
+            <p><strong>Formato da rede:</strong> Linha, anel, árvore ou estrela.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Normalmente não. A versão EtherCAT P leva energia no mesmo cabo.</p>
+            <p><strong>Como evitam confusão:</strong> O mestre envia um pacote e cada escravo lê e escreve nele na passagem.</p>
+            <p><strong>Velocidade:</strong> 100 Mbps.</p>
+            <p><strong>Distância máxima:</strong> 100 m entre aparelhos, e até 65 535 aparelhos.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim. Ciclos a partir de 0,1 ms.</p>
+            <p><strong>Onde é usada:</strong> Robôs, máquinas CNC e controle de movimento preciso.</p>
+        </section>
+
+        <section>
+            <h2>Modbus TCP</h2><br>
+            <p>O Modbus que roda sobre Ethernet comum.</p>
+            <p><strong>Cabo:</strong> Cabo Ethernet comum.</p>
+            <p><strong>Conector:</strong> RJ45 e M12.</p>
+            <p><strong>Formato da rede:</strong> Estrela ou linha.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não.</p>
+            <p><strong>Como evitam confusão:</strong> Cliente pergunta, servidor responde, pela rede Ethernet comum.</p>
+            <p><strong>Velocidade:</strong> 10, 100 ou 1000 Mbps.</p>
+            <p><strong>Distância máxima:</strong> 100 m por trecho de cabo.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Não. Responde em milissegundos ou dezenas de ms.</p>
+            <p><strong>Onde é usada:</strong> Ligar CLPs, supervisórios e medidores.</p>
+        </section>
+
+        <section>
+            <h2>CANopen</h2><br>
+            <p>Protocolo de máquinas feito em cima do CAN, o barramento de comunicação dos carros.</p>
+            <p><strong>Cabo:</strong> Par trançado com fio terra e malha.</p>
+            <p><strong>Conector:</strong> D-Sub de 9 pinos, M12 de 5 pinos ou bornes.</p>
+            <p><strong>Formato da rede:</strong> Barramento com resistor de 120 Ω em cada ponta.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Pode levar, mas é opcional.</p>
+            <p><strong>Como evitam confusão:</strong> Quando dois falam juntos, vence quem tem prioridade maior, sem perder a mensagem.</p>
+            <p><strong>Velocidade:</strong> De 10 kbps a 1 Mbps.</p>
+            <p><strong>Distância máxima:</strong> De 25 m (rápido) a 5 km (muito lento).</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim, por prioridade.</p>
+            <p><strong>Onde é usada:</strong> Máquinas móveis, drives de motor e equipamentos médicos.</p>
+        </section>
+
+        <section>
+            <h2>MQTT</h2><br>
+            <p>Um sistema de mensagens leve, parecido com seguir um canal. Quem publica manda, quem assinou recebe.</p>
+            <p><strong>Cabo:</strong> Não tem cabo próprio. Usa a rede que existir: Ethernet, Wi-Fi ou celular.</p>
+            <p><strong>Conector:</strong> Os da rede escolhida, como o RJ45.</p>
+            <p><strong>Formato da rede:</strong> Estrela, com um servidor central (broker) no meio.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não se aplica.</p>
+            <p><strong>Como evitam confusão:</strong> Quem envia publica num tópico. O broker entrega a todos que assinaram.</p>
+            <p><strong>Velocidade:</strong> Depende da rede. É bem leve.</p>
+            <p><strong>Distância máxima:</strong> Depende da rede.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Não.</p>
+            <p><strong>Onde é usada:</strong> Levar dados da fábrica para a nuvem (Indústria 4.0 e IoT). A segurança usa TLS.</p>
+        </section>
+
+        <section>
+            <h2>OPC UA</h2><br>
+            <p>Uma língua comum para máquinas de marcas diferentes trocarem dados e se entenderem.</p>
+            <p><strong>Cabo:</strong> Não tem cabo próprio. Usa a rede existente.</p>
+            <p><strong>Conector:</strong> Os da rede escolhida.</p>
+            <p><strong>Formato da rede:</strong> Cliente e servidor, ou publicador e assinante.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não se aplica.</p>
+            <p><strong>Como evitam confusão:</strong> Cliente pede e servidor responde, com criptografia e certificados de segurança.</p>
+            <p><strong>Velocidade:</strong> Depende da rede.</p>
+            <p><strong>Distância máxima:</strong> Depende da rede.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Não, mas pode ser com TSN.</p>
+            <p><strong>Onde é usada:</strong> Liga máquinas aos sistemas da empresa (MES, ERP) e à nuvem.</p>
+        </section>
+
+        <section>
+            <h2>CC-Link</h2><br>
+            <p>Rede industrial da Mitsubishi. Existe a versão por fios (RS-485) e a versão Ethernet (CC-Link IE).</p>
+            <p><strong>Cabo:</strong> Fios trançados blindados. O CC-Link IE usa cabo Ethernet Cat5e.</p>
+            <p><strong>Conector:</strong> Conector de 5 pinos, e RJ45 no IE.</p>
+            <p><strong>Formato da rede:</strong> Barramento. O IE aceita linha, estrela e anel.</p>
+            <p><strong>Energia no mesmo cabo:</strong> Não.</p>
+            <p><strong>Como evitam confusão:</strong> Mestre pergunta a todos (broadcast). No IE, um bastão (token) passa de um para outro.</p>
+            <p><strong>Velocidade:</strong> De 156 kbps a 10 Mbps. O IE chega a 1 Gbps.</p>
+            <p><strong>Distância máxima:</strong> De 1200 m (lento) a 100 m (rápido). Até 64 estações.</p>
+            <p><strong>Tempo de resposta garantido:</strong> Sim.</p>
+            <p><strong>Onde é usada:</strong> Máquinas e linhas de produção, principalmente com CLP Mitsubishi.</p>
+        </section>
+
+    </main>
+    <br><br>
+    <footer>by miguel da silva &copy; &trade; </footer>
+
+</body>
+</html>
